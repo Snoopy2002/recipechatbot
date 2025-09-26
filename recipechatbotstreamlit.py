@@ -3,6 +3,7 @@
 Created on Sat Apr 20 19:33:06 2024
 
 @author: Snoopy
+Generates 3 distinct recipes on prompt
 """
 #https://docs.streamlit.io/
 import streamlit as st
@@ -80,5 +81,6 @@ if __name__ == '__main__':
     #recipechatbot(questions, responses, messages)
 
     
+
 
 

@@ -55,7 +55,8 @@ def addrecipe(request):
 
 
 if __name__ == '__main__':
-    os.environ["OPENAI_API_KEY"]==st.secrets["slkey"]
+    key=st.secrets["slkey"]
+    os.environ["OPENAI_API_KEY"]=key
     os.getenv('OPENAI_API_KEY')
     client=OpenAI() #can also pass key to client if enviro vbl not set
     random.seed()
@@ -79,3 +80,4 @@ if __name__ == '__main__':
     #recipechatbot(questions, responses, messages)
 
     
+

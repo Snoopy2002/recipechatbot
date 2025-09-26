@@ -19,7 +19,7 @@ def providerecipe(recipequestion):
 
        messages.append({'role':'system','content':system_prompt})
        messages.append({'role':'user', 'content': recipequestion})
-       n=3 #number of recipes returned
+       n=2 #number of recipes returned
        botresponse=client.chat.completions.create(model='gpt-5-mini', messages=messages,n=n,temperature=1.6,presence_penalty=1.0)
        progress_text = "Recipe generation in progress. Please wait."
        my_bar = st.progress(0, text=progress_text)
@@ -81,6 +81,7 @@ if __name__ == '__main__':
         #recipechatbot(questions, responses, messages)
 
     
+
 
 
 
